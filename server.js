@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const geminiApiKey = process.env.GEMINI_API_KEY;
+const geminiApiKey = process.env.GROQ_API_KEY;
 
 app.post('/api/advice', async (req, res) => {
   try {
